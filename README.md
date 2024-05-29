@@ -41,6 +41,7 @@ This project is a Tournament Management System developed using Node.js, Express.
 
 3. Add rooms to a tournament:
    /add-room/:tournament_name
+   response - <br />
    {
   "_id": "6656c2ef293c3754705481d7",
   "tournament_name": "test",
@@ -58,12 +59,14 @@ This project is a Tournament Management System developed using Node.js, Express.
 
 5. Join a tournament:
    /join-tournament
+   response - <br />
    {
    tournament_name :"test"
    }
     
 7. Declare winner for a room:
    /declare-winner/:tournament_name/:room_id
+   response- <br />
   { 
     winner :"player1"
   }
