@@ -27,15 +27,44 @@ This project is a Tournament Management System developed using Node.js, Express.
 ## Usage
 1. Create a tournament:
    /create-tournament
+   response - {
+  "tournament_name": "test",
+  "creator_name": "bipin",
+  "_id": "6656c2ef293c3754705481d7",
+  "rooms": [],
+  "createdAt": "2024-05-29T05:53:51.954Z",
+  "updatedAt": "2024-05-29T05:53:51.954Z",
+  "__v": 0
+}
 
-2. Add rooms to a tournament:
+3. Add rooms to a tournament:
    /add-room/:tournament_name
+   {
+  "_id": "6656c2ef293c3754705481d7",
+  "tournament_name": "test",
+  "creator_name": "bipin",
+  "rooms": [
+    {
+      "players": [],
+      "_id": "6656c32a293c3754705481db"
+    }
+  ],
+  "createdAt": "2024-05-29T05:53:51.954Z",
+  "updatedAt": "2024-05-29T05:54:50.573Z",
+  "__v": 0
+}
 
-3. Join a tournament:
+5. Join a tournament:
    /join-tournament
-
-4. Declare winner for a room:
+   {
+   tournament_name :"test"
+   }
+    
+7. Declare winner for a room:
    /declare-winner/:tournament_name/:room_id
+  { 
+    winner :"player1"
+  }
 
 
 
