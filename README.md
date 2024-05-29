@@ -27,7 +27,9 @@ This project is a Tournament Management System developed using Node.js, Express.
 ## Usage
 1. Create a tournament:
    /create-tournament
-   response - {
+   
+   response - <br />
+   {
   "tournament_name": "test",
   "creator_name": "bipin",
   "_id": "6656c2ef293c3754705481d7",
