@@ -5,10 +5,12 @@
 This project is a Tournament Management System developed using Node.js, Express.js, and MongoDB. It allows users to create tournaments, add rooms to tournaments, join tournaments, and declare winners based on player scores.
 
 ## Installation
-1. Clone the repository:
+1. Clone the repository: 
+    git clone https://github.com/bpn1604/abhiwan.git
 
 2. Install dependencies:
-
+   npm install 
+   
 3. Set up MongoDB:
 - Install MongoDB locally or use a cloud-based MongoDB service.
 - Update the MongoDB connection string in the `server.js` file to point to your MongoDB instance.
