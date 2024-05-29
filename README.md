@@ -98,4 +98,8 @@ This project is a Tournament Management System developed using Node.js, Express.
 
 ## Default Route
 ```http
-GET / Welcome to our Tournament
+GET /
+ **Success Response:**
+    ``` Welcome to our Tournament
+    
+    ```
