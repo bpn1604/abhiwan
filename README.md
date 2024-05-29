@@ -1,4 +1,4 @@
-# abhiwan
+# Abhiwan
 # Tournament Management System
 
 ## Description
