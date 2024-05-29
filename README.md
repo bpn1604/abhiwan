@@ -24,12 +24,33 @@ This project is a Tournament Management System developed using Node.js, Express.
 
 5. The server will start running at `http://localhost:8080`.
 
-## Usage
-1. Create a tournament:
-   /create-tournament
-   
-   response - <br />
-   {
+
+
+### techStack used
+  - Express
+  - MongoDB
+  - Node.js
+
+
+#### Default route
+
+```http
+  GET /
+ 
+```
+
+```http
+  Response: "Welcome to our Tournament"
+
+```
+#### Create Tournament
+
+```http
+  POST /tournament/create
+```
+
+```http
+ success Response: {
   "tournament_name": "test",
   "creator_name": "bipin",
   "_id": "6656c2ef293c3754705481d7",
@@ -38,11 +59,18 @@ This project is a Tournament Management System developed using Node.js, Express.
   "updatedAt": "2024-05-29T05:53:51.954Z",
   "__v": 0
 }
+ 
 
-3. Add rooms to a tournament:
+```
+#### Create Room
+
+```http
+  Add rooms to a tournament:
    /add-room/:tournament_name
-   response - <br />
-   {
+```
+
+```http
+ success Response:  {
   "_id": "6656c2ef293c3754705481d7",
   "tournament_name": "test",
   "creator_name": "bipin",
@@ -56,22 +84,27 @@ This project is a Tournament Management System developed using Node.js, Express.
   "updatedAt": "2024-05-29T05:54:50.573Z",
   "__v": 0
 }
+ 
 
-5. Join a tournament:
-   /join-tournament
+```
+
+
+#### Join a tournament
+```http
+ /join-tournament
    response - <br />
    {
    tournament_name :"test"
    }
-    
-7. Declare winner for a room:
+```
+####   winner
+
+```http
+   Declare winner for a room:
    /declare-winner/:tournament_name/:room_id
    response- <br />
   { 
     winner :"player1"
   }
+```
 
-
-
-## License
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
